@@ -1,0 +1,60 @@
+inputs
+- bio
+    - full name
+    - email
+    - mobile number
+    - address
+- education
+    - school
+    - degree
+    - start date
+    - end date
+    - location
+- experience
+    - company name
+    - position title
+    - start
+    - end
+    - location
+    - description
+display
+- full name
+- banner
+    - email
+    - number
+    - address
+- education
+    - left column
+        - start date to end date
+        - location
+    - right column
+        - school
+        - degree
+- experience
+    - left col
+        - start date to end date
+        - location
+    - right col
+        - company name
+        - position title
+        - description
+
+CV
+- states
+    - bio
+    - education
+    - experience
+- components
+    - Inputs
+        - bio (bio, handleBioChange)
+        - Education (education, handleEducationChange)
+        - Experience (experience, handleExperienceChange)
+    - Display (bio, education, experience)
+
+
+- education and experience kinda similar?
+    - component with optional description?
+
+
+need a variable to toggle between edit and not 
+each education have a state variable that decides if it displays basic info or inputs for editing

@@ -1,0 +1,52 @@
+:root {
+    --cv-background-theme: rgb(14, 55, 78);
+}
+
+.display {
+    padding: 20px;
+    background-color: var(--background-tone);
+}
+
+.cv-display {
+    min-height: 1000px;
+    background-color: white;
+}
+
+.bio {
+    background-color: var(--cv-background-theme);
+}
+
+/* container for all bio info */
+.bio > div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    color: white;
+}
+
+/* number, email, address */
+.bio > div > div {
+    display: flex;
+    gap: 20px;
+}
+
+/* container for number, email, address and icons*/
+.bio > div > div > div {
+    display: flex;
+    gap: 10px;
+}
+
+/* list of educations and experiences */
+.display-section {
+    padding: 10px 20px;
+}
+
+/* heading for educations and experiences */
+.display > div > div > h1 {
+    background-color: var(--background-tone);
+    display: flex;
+    justify-content: center;
+    color: var(--cv-background-theme);
+    font-size: 25px;
+}

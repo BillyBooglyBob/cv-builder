@@ -1,0 +1,82 @@
+:root {
+    --background-tone: rgb(224, 224, 224);
+    --section-tone: rgb(238, 235, 235);
+    --section-tone-dark: rgb(184, 182, 182);
+}
+
+.cv {
+    display: flex;
+}
+
+.inputs {
+    flex: 1;
+    background-color: var(--background-tone);
+    padding: 40px;
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* sections (personal details, educations, experiences) */
+.inputs > div {
+    background-color: var(--section-tone);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+/* heading of the section descriptions */
+.inputs > div > h1 {
+    font-size: 30px;
+}
+
+.inputs > div > div {
+    display: flex;
+    gap: 10px;
+}
+
+/* heading of the sections */
+.inputs > h1 {
+    font-size: 20px;
+}
+
+/* input fields for editing for all the sections */
+.inputs > div > input,
+.inputs > div > div > input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    background-color: var(--background-tone);
+    color: black;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* buttons of the cv for delete and submit */
+.inputs > button,
+.inputs > div > .edit-form > .buttons > button {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--section-tone);
+
+    max-width: 50%;
+    min-height: 30px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.inputs > div > .edit-form > .buttons > button {
+    background-color: var(--background-tone);
+}
+
+.inputs > button:hover,
+.inputs > div > .edit-form > .buttons > button:hover {
+    background-color: var(--section-tone-dark);
+}
+
+.display {
+    flex: 2;
+    background-color: rgb(191, 234, 234);
+    color: black;
+}
