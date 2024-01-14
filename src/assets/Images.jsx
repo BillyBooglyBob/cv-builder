@@ -4,7 +4,6 @@ const IMAGES = {
     address: new URL("./address.svg", import.meta.url).href,
     education: new URL("./education.svg", import.meta.url).href,
     work: new URL("./work.svg", import.meta.url).href,
-    logo: new URL("./cv-logo.png", import.meta.url).href
 };
 
 export default IMAGES;

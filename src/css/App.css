@@ -80,3 +80,10 @@
     background-color: rgb(191, 234, 234);
     color: black;
 }
+
+@media (max-width: 550px) {
+    .cv {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -50,3 +50,12 @@
     color: var(--cv-background-theme);
     font-size: 25px;
 }
+
+@media (max-width: 550px) {
+    .bio > div > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
